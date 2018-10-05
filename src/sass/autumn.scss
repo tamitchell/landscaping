@@ -1,0 +1,57 @@
+@import "./variable";
+@import "./mixins";
+
+body {
+  background-color: $brown;
+  color: $smokehaze;
+  .hero {
+    height: 70vh;
+    background-image: url("../img/leaves.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1 {
+      margin-top:1em;
+      font-size: 8vmin;
+      text-transform: lowercase;
+    }
+    hr {
+      border: 1px solid $orange;
+      width: 50vw;
+    }
+    h5 {
+      font-weight: 200;
+      font-size: 28px;
+    }
+    .hero-btn {
+        width: 30vw;
+        height: 30vw;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0.3em;
+        background: transparent;
+        border: 1px solid $smokehaze;
+        color: $smokehaze;
+        font-size: 14px;
+        img {
+            width: 70%;
+        }
+    }
+  }
+  .call-to-action {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: $smokehaze;
+
+      h2 {
+          text-align: left;
+      }
+  }
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
