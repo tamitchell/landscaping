@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../sass/main.scss';
 import Autumn from './Autumn'
 
 class App extends Component {

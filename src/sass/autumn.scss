@@ -4,6 +4,8 @@
 body {
   background-color: $brown;
   color: $smokehaze;
+  width: 100vw;
+  height: 100vh;
   .hero {
     height: 70vh;
     background-image: url("../img/leaves.jpeg");
@@ -11,7 +13,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
-      margin-top:1em;
+      text-align: center;
+      color: $smokehaze;
+      margin-top: 1em;
       font-size: 8vmin;
       text-transform: lowercase;
     }
@@ -22,8 +26,12 @@ body {
     h5 {
       font-weight: 200;
       font-size: 28px;
+      text-align: center;
+      color: $smokehaze;
     }
-    .hero-btn {
+    .col:nth-of-type(2) {
+      @include flexbox();
+      .hero-btn {
         width: 30vw;
         height: 30vw;
         max-width: 200px;
@@ -34,24 +42,122 @@ body {
         color: $smokehaze;
         font-size: 14px;
         img {
-            width: 70%;
+          width: 70%;
         }
+      }
     }
   }
   .call-to-action {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: $smokehaze;
+    @include flexbox();
+    margin: 0 auto;
+    height: 100%;
+    max-width: 90vw;
+    background-color: $smokehaze;
+    padding: 2em;
+    text-align: left;
+    h2 {
+      color: $orange;
+    }
+    p {
+      color: $brown;
+    }
+    button {
+      margin: 0 auto;
+      background-color: $cementblue;
+      color: $smokehaze;
+      width: 20vw;
+      min-width: 150px;
+      height: 40px;
+      border-radius: 50px;
+      border: none;
+      font-size: 16px;
+    }
+    .col:first-child {
+      max-width: 500px;
+    }
+    .col:nth-of-type(2) {
+      max-width: 500px;
 
-      h2 {
-          text-align: left;
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 2em auto;
       }
+      padding: 0;
+    }
+  }
+  .works {
+    margin: 0 auto;
+    max-width: 90vw;
+    padding: 2em;
+    background-color: $brown;
+    color: $smokehaze;
+    .col:nth-of-type(2) {
+      @include flexbox();
+      flex-flow: row wrap;
+      img {
+      display: inline-block;
+      margin: 0 auto;
+        width: 300px;
+        max-width: 300px;
+        height: 250px;
+        margin: 0.3em;
+        border-radius: 15px;
+      }
+    }
+    h5 {
+      text-align: center;
+      padding-bottom: 1em;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .contact {
+    margin: 0 auto;
+    max-width: 90vw;
+    height: 60vh;
+    padding: 2em;
+    max-width: 90vw;
+    background-image: url('../img/man.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexbox();
+    justify-content: flex-end;
+    form {
+        width: 40%;
+        min-width: 300px;
+        color: $smokehaze;
+        label {
+            display: none;
+        }
+        input, input[type=textarea] {
+            min-width: 200px;
+            max-width: 300px;
+            width: 100%;
+        }
+        h3 {
+            font-weight: 600;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
   }
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    border: 1px solid red;
+@media screen and (max-width: 768px) {
+  .call-action-col-img {
+    display: none;
+  }
+  .works {
+      h5 {
+        text-align: left;
+      }
+      form {
+        justify-content: flex-end;
+      }
+  } 
 }
