@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Fade, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Parallax, Background } from 'react-parallax';
 
 const Contact = () => (
     <Container fluid={true}>
@@ -42,10 +43,10 @@ const Contact = () => (
                   <Label for="message" sm={2}>
                     Message
                   </Label>
-                  <Col sm={10}>
+                  <Col sm={8}>
                     <Input 
                     type="textarea" 
-                    name="text" 
+                    name="message" 
                     id="message"
                     placeholder="Place a message here" />
                   </Col>

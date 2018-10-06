@@ -4,10 +4,11 @@
 body {
   background-color: $brown;
   color: $smokehaze;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   .hero {
     height: 70vh;
+    min-width: 100vw;
     background-image: url("../img/leaves.jpeg");
     background-position: bottom;
     background-size: cover;
@@ -51,7 +52,6 @@ body {
     @include flexbox();
     margin: 0 auto;
     height: 100%;
-    max-width: 90vw;
     background-color: $smokehaze;
     padding: 2em;
     text-align: left;
@@ -90,7 +90,6 @@ body {
   }
   .works {
     margin: 0 auto;
-    max-width: 90vw;
     padding: 2em;
     background-color: $brown;
     color: $smokehaze;
@@ -116,10 +115,8 @@ body {
   }
   .contact {
     margin: 0 auto;
-    max-width: 90vw;
-    height: 60vh;
+    height: auto;
     padding: 2em;
-    max-width: 90vw;
     background-image: url('../img/man.jpeg');
     background-position: center;
     background-size: cover;
@@ -135,8 +132,9 @@ body {
         }
         input, input[type=textarea] {
             min-width: 200px;
-            max-width: 300px;
+            max-width: 250px;
             width: 100%;
+            border: 1px solid red;
         }
         h3 {
             font-weight: 600;
@@ -148,7 +146,14 @@ body {
   }
 }
 
+.row {
+    max-width: 80vw;
+}
+
 @media screen and (max-width: 768px) {
+    .row  {
+        min-width: 100vw;
+    }
   .call-action-col-img {
     display: none;
   }
