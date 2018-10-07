@@ -16,15 +16,15 @@ const Hero = () => (
                 <Button className="hero-btn">
                 <img src={require('../img/flower-icon.png')} alt="Flower icon" />
                 <br/>
-                Maintaining a Garden</Button>
+               Gardening</Button>
                 <Button className="hero-btn">
                 <img src={require('../img/shovel-pitchfork-icon.png')} alt="Shovel and Rake icon" />
                 <br />
-                Cleaning the yard</Button>
+                Yard</Button>
                 <Button className="hero-btn">
                 <img src={require('../img/home-icon.png')} alt="Home icon" />
                 <br />
-                Preparing for winter</Button>
+                Preparation</Button>
             </Col>
         </Row>
     </Container>

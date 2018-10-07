@@ -4,6 +4,7 @@ import Hero from './Hero'
 import CalltoAction from './CalltoAction'
 import Works from './Works'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const HeroAutumn = () => (
     <Fragment>
@@ -15,6 +16,9 @@ const HeroAutumn = () => (
         <Works />
         <Contact />
     </main>
+    <footer>
+        <Footer />
+    </footer>
     </Fragment>
 )
 
