@@ -110,6 +110,7 @@ body {
       .col:nth-of-type(2) {
         @include flexbox();
         flex-flow: row wrap;
+        border: 1px solid transparent;
         img {
           display: inline-block;
           margin: 0 auto;
@@ -188,7 +189,7 @@ body {
   .call-action-col-img {
     display: none;
   }
-  .hero-btn {
-    display: none;
-  }
+//   .hero-btn {
+//     display: none;
+//   }
 }

@@ -109,6 +109,7 @@ body {
       background-color: $fall_background;
       .col:nth-of-type(2) {
         @include flexbox();
+        border: 1px solid transparent;
         flex-flow: row wrap;
         img {
           display: inline-block;
@@ -120,6 +121,7 @@ body {
         }
       }
       h5 {
+        color: $fall_text;
         padding-bottom: 1em;
         font-size: 24px;
         font-weight: 600;
@@ -188,7 +190,7 @@ body {
   .call-action-col-img {
     display: none;
   }
-  .hero-btn {
-    display: none;
-  }
+  // .hero-btn {
+  //   display: none;
+  // }
 }
