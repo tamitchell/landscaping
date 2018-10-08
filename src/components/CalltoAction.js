@@ -109,7 +109,7 @@ class CalltoAction extends Component {
           </Modal>
           </Col>
           <Col className="call-action-col-img" >
-          {this.props.handleSeason()[1].img}
+          {this.props.img}
           </Col>
 
         </Row>
