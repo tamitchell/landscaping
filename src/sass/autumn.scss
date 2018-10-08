@@ -182,61 +182,8 @@ body {
 
     }
   }
-  //     .contact{
-  //       height: auto;
-  //       padding: 5em;
-  //       background-image: url("../img/man.jpeg");
-  //       background-position: center;
-  //       background-size: cover;
-  //       background-repeat: no-repeat;
-  //       @include flexbox();
-  //       form {
-  //         bordeR: 1px solid pink;
-  //         display: block;
-  //         margin: 0 auto;
-  //         width: 40%;
-  //         min-width: 300px;
-  //         color: $smokehaze;
-  //         label {
-  //           display: none;
-  //         }
-  //         input[type=textarea] {
-  //           min-width: 100%;
-  //           bordeR: 1px solid purple;
-  //         }
-  //         h3 {
-  //           font-weight: 600;
-  //         }
-  //         h4 {
-  //           font-size: 16px;
-  //         }
-  //       }
-  //     }
 }
-//   .container-fluid {
-//     position: relative;
-//     }
-//   }
-// }
 
-// @media screen and (min-width: 768px) {
-//   .container-fluid {
-//     width: 100%;
-//     bordeR: 1px solid red;
-//         .row:not(.hero, form) {
-//           // display: block;
-//           margin: 0 auto;
-//           width: 100%;
-//           max-width: 80vw;
-//         }
-//         .call-to-action {
-//           @include flexbox();
-//         }
-//         .contact {
-//           justify-content: flex-end;
-//         }
-//   }
-// }
 @media screen and (max-width: 768px) {
   .call-action-col-img {
     display: none;

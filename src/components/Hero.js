@@ -9,7 +9,7 @@ const Hero = () => (
                     Autumn is here
                 </Fade>                
                 <hr />
-                <Fade in={true} tag="h5" transitionAppearTimeout={200}>
+                <Fade in={true} tag="h5" transitionappeartimeout={200}>
                     Let us know how we can help with:
                 </Fade>              </Col>
             <Col>

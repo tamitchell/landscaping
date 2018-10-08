@@ -62,7 +62,7 @@ const Contact = () => (
               </Form>
         </Row>
           <Background className="parallax">
-            <img src={require('../img/man.jpeg')} />
+            <img src={require('../img/man.jpeg')} alt="Founder"/>
 
           </Background>
         </Parallax>
