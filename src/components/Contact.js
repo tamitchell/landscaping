@@ -8,6 +8,8 @@ const Contact = () => (
         strength={400}>
         <Row className="contact">
         <Form>
+          {/* <h3>Interested?</h3>
+          <h4>Send us a message</h4> */}
         <Fade in={true} tag="h3" className="mt-3">
                     Interested?
         </Fade>
@@ -18,7 +20,7 @@ const Contact = () => (
                   <Label for="Name" sm={2}>
                     First Name, Last Name
                   </Label>
-                  <Col sm={10}>
+                  <Col sm={12}>
                     <Input
                       type="text"
                       name="name"
@@ -31,7 +33,7 @@ const Contact = () => (
                   <Label for="phonenumber" sm={2}>
                     Phone Number
                   </Label>
-                  <Col sm={10}>
+                  <Col sm={12}>
                     <Input
                       type="tel"
                       name="phone"
@@ -45,7 +47,7 @@ const Contact = () => (
                   <Label for="message" sm={2}>
                     Message
                   </Label>
-                  <Col sm={8}>
+                  <Col sm={12}>
                     <Input 
                     style={{
                       width: '100%',

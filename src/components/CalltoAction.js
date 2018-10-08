@@ -52,9 +52,8 @@ class CalltoAction extends Component {
           <Modal
             isOpen={this.state.modal}
             toggle={this.toggle}
-            className={this.props.className}
           >
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader className="modal-header" toggle={this.toggle}>Leave a message</ModalHeader>
             <ModalBody>
               <Form>
               <FormGroup row>
@@ -100,7 +99,7 @@ class CalltoAction extends Component {
             </ModalBody>
             <ModalFooter>
               <Button color="primary" onClick={this.toggle}>
-                Do Something
+                Submit
               </Button>{" "}
               <Button color="secondary" onClick={this.toggle}>
                 Cancel
