@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container, Row, Col, Button, Fade } from 'reactstrap';
 
-const Hero = () => (
+const Hero = (props) => (
     <Container fluid={true}>
         <Row className="hero">
             <Col xs="12" l="12">
             <Fade in={true} tag="h1">
-                    Autumn is here
+            {props.handleSeason()[0].title}
                 </Fade>                
                 <hr />
                 <Fade in={true} tag="h5" transitionappeartimeout={200}>

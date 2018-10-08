@@ -109,7 +109,7 @@ class CalltoAction extends Component {
           </Modal>
           </Col>
           <Col className="call-action-col-img" >
-            <img src={require('../img/boy_leaves.jpeg')} alt="Happy Boy in leaves" />
+          {this.props.handleSeason()[1].img}
           </Col>
 
         </Row>
