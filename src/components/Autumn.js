@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
-import '../sass/autumn.scss'
+// import '../sass/autumn.scss'
+import '../sass/winter.scss'
 import Hero from './Hero'
 import CalltoAction from './CalltoAction'
 import Works from './Works'

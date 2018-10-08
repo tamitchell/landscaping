@@ -2,7 +2,7 @@
 @import "./mixins";
 
 body {
-  background-color: $fall_background !important;
+  background-color: $winter_background !important;
   h1,
   h2,
   h3,
@@ -12,10 +12,10 @@ body {
     text-align: center;
   }
   p {
-    color: $fall_background;
+    color: $winter_background;
   }
   a {
-    color: $fall_orange;
+    color: $winter_header;
   }
   .container-fluid {
     padding: 0;
@@ -35,13 +35,13 @@ body {
       padding: 2em;
       height: 70vh;
       width: 100%;
-      background-image: url("../img/leaves.jpeg");
+      background-image: url("https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f96bdaf999d3644b1157b27d214517a&auto=format&fit=crop&w=1534&q=80");
       background-position: bottom;
       background-size: cover;
       background-repeat: no-repeat;
       padding: 2em;
       hr {
-        border: 1px solid $fall_orange;
+        border: 1px solid $winter_header;
         width: 50vw;
       }
       h1 {
@@ -77,11 +77,11 @@ body {
       background-color: $fall_text;
       text-align: left;
       h2 {
-        color: $fall_orange;
+        color: $winter_header;
       }
       button {
         margin: 0 auto;
-        background-color: $fall_cementblue;
+        background-color: $winter_cementblue;
         color: $fall_text;
         width: 20vw;
         min-width: 150px;
@@ -106,7 +106,7 @@ body {
       }
     }
     .works {
-      background-color: $fall_background;
+      background-color: $winter_background;
       .col:nth-of-type(2) {
         @include flexbox();
         flex-flow: row wrap;
@@ -148,7 +148,7 @@ body {
       }
     }
     .phone-contact {
-      background-color: $fall_orange;
+      background-color: $winter_header;
       color: $fall_text;
       padding: 2em;
       height: auto;
@@ -169,7 +169,7 @@ body {
       height: 100%;
       h1 {
         padding: 3em 0 0.5em 0;
-        color: $fall_background;
+        color: $winter_background;
       }
       p {
         text-align: center;

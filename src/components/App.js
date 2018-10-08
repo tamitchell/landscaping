@@ -4,18 +4,11 @@ import "datejs";
 
 class App extends Component { 
   changeSeason = () => {
-    let now = new Date("08/22").valueOf()  
+    let now = new Date().valueOf()  
     let first_day_summer = new Date("06/21").valueOf()
     let first_day_autumn = new Date("09/22").valueOf()
     let first_day_spring = new Date("03/20").valueOf()
     let first_day_winter = new Date("12/21").valueOf()
-    console.log(
-      {'spring': first_day_spring}, 
-      {'summer':first_day_summer}, 
-      {'autumn': first_day_autumn}, 
-      {'winter':first_day_winter}, 
-      {'now': now})
-
 
     if( now >= first_day_autumn && now < first_day_winter) {
       console.log(`it's autumn`);
