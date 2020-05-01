@@ -3,6 +3,7 @@ import Site from "./Site";
 import "datejs";
 import "./seasonal";
 import { title, actionimg } from "./seasonal";
+import "../sass/app.scss"
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +18,6 @@ class App extends Component {
     let siteObj;
     let date = new Date();
     let month = date.getMonth();
-    console.log(month);
     switch (month) {
       case 12:
       case 1:

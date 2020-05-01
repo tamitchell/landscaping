@@ -1,0 +1,13 @@
+@import "./variable";
+@import "./mixins";
+
+
+@import "./typography";
+@import "./containers";
+@import "./button";
+
+@media screen and (max-width: 768px) {
+    .call-action-col-img {
+      display: none;
+    }
+  }

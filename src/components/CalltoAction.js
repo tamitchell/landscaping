@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   Container,
-  Row,
   Col,
   Button,
   Modal,
@@ -33,7 +32,7 @@ class CalltoAction extends Component {
   render() {
     return (
       <Container fluid={true}>
-        <Row className="call-to-action">
+        <div className="call-to-action">
           <Col>
             <h2>
               Company Name. <br /> Real People. <br /> Real Service.
@@ -46,7 +45,7 @@ class CalltoAction extends Component {
               tempor l uctus, mi diam imperdiet ante, vitae maximus orci quam
               finibus eros. Aenean in porta nibh.
             </p>
-          <Button onClick={this.toggle}>
+          <Button className="call-to-action-btn" onClick={this.toggle}>
             Contact Us
           </Button>
           <Modal
@@ -111,29 +110,10 @@ class CalltoAction extends Component {
           {this.props.img}
           </Col>
 
-        </Row>
+        </div>
       </Container>
     );
   }
 }
-// const CalltoAction = () => (
-//   <Container>
-// <Row className="call-to-action">
-//   <Col>
-//     <h2>
-//       Company Name. <br /> Real People. <br /> Real Service.
-//     </h2>
-//     <p>
-//       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-//       consectetur massa non libero luctus, a ultrices quam hendrerit. Etiam
-//       maximus purus ac mauris cursus iaculis. In ornare diam non purus
-//       condimentum pretium. Aliquam placerat, ligula non tempor l uctus, mi
-//       diam imperdiet ante, vitae maximus orci quam finibus eros. Aenean in
-//       porta nibh.
-//     </p>
-//   </Col>
-// </Row>
-//   </Container>
-// );
 
 export default CalltoAction;

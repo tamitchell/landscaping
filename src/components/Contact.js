@@ -6,7 +6,7 @@ const Contact = () => (
     <Container fluid={true}>
         <Parallax
         strength={400}>
-        <Row className="contact">
+        <div className="contact">
         <Form>
           {/* <h3>Interested?</h3>
           <h4>Send us a message</h4> */}
@@ -62,13 +62,13 @@ const Contact = () => (
             <Button type="submit">Submit</Button>
         </FormGroup>
               </Form>
-        </Row>
+        </div>
           <Background className="parallax">
             <img src={require('../img/man.jpeg')} alt="Founder"/>
 
           </Background>
         </Parallax>
-        <Row className="phone-contact">
+        <div className="phone-contact">
           <Col>
                   <h3>Or give us a call</h3>
           </Col>
@@ -76,7 +76,7 @@ const Contact = () => (
                   <p>Your Name Here</p>
                   <a href="tel:555-555-5555">555-555-5555</a>
           </Col> 
-          </Row>
+          </div>
           </Container>
 )
 

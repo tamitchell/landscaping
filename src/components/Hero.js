@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Fade } from 'reactstrap';
 
 const Hero = (props) => (
     <Container fluid={true}>
-        <Row className="hero">
+        <div className="hero">
             <Col xs="12" l="12">
             <Fade in={true} tag="h1">
             {props.title}
@@ -26,7 +26,7 @@ const Hero = (props) => (
                 <br />
                 Preparation</Button>
             </Col>
-        </Row>
+        </div>
     </Container>
 )
 
